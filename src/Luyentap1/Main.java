@@ -27,8 +27,8 @@ public class Main {
         if (thanhVien) {
             giamGia = thanhTien * 0.1;
         }
-        double vat = (thanhTien - giamGia) * 0.08;
-        double tongTien =  thanhTien - gia + vat;
+        double vat = thanhTien * 0.08;
+        double tongTien =  thanhTien - giamGia + vat;
 
         //xuất kết quả
         System.out.println("\n===== HÓA ĐƠN =====");
@@ -37,7 +37,7 @@ public class Main {
         System.out.println("Số lượng: " + soLuong);
         System.out.printf("Thành tiền : %,.0f VND%n",  thanhTien);
         System.out.printf("Giảm giá: %,.0f VND%n",  giamGia);
-        System.out.printf("Tiền VAT: %,.0f VND%n" + vat);
+        System.out.printf("Tiền VAT: %,.0f VND%n", vat);
         System.out.printf("Tổng thanh toán: %,.0f VND%n", tongTien);
         sc.close();
     }
